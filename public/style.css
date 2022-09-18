@@ -1,0 +1,118 @@
+body{
+    padding: 1rem;
+}
+#logo{  
+   height: max-content;
+}
+#logo>img{
+  display: block;
+  width: 90vw;
+  margin: 1rem auto;
+}
+h1:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #ffcd11;  
+  transform: scaleX(1);  
+  }
+main,#getdata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#cntxt{
+  font-size: 1.25rem; 
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
+}
+#input-box {
+      display: flex;
+      align-items: center;
+      margin: .25rem 0;
+      max-width: 300px;
+      background: #fff;
+      border: 2px solid rgba(0, 0, 0, 0.75);
+      border-radius: 4px;
+      padding-left: 0.5rem;
+      overflow: hidden;
+  }
+  #input-box .prefix {
+      color: rgba(0, 0, 0, 0.75);
+  }
+  #input-box input {
+      flex-grow: 1;
+      font-size: 14px;
+      background: #fff;
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+  }
+  #input-box:focus-within {
+      border-color: #777;
+  }
+  #getdata{
+      align-items: center;
+  }
+  #output{
+      display: none; 
+      background-color: rgba(0, 0, 0, 0.75);
+      font-size: 1.25rem;
+      max-width: 90vw;
+      align-self: center;
+      border: 2px solid rgba(0, 0, 0, 0.75);
+      border-radius: 15px;
+  }
+  #machine-img{
+      background: url('assets/machine.png')  no-repeat center;
+      background-size: contain;
+      height: 250px !important;
+      flex:1;
+      filter: drop-shadow(2px 4px 6px black);
+  }
+  .tit{
+      color: #ffcd11;
+      font-weight: bold;
+  }
+  .val{
+      color: #fff;
+  }
+  #start {
+      cursor: pointer;
+      background: #ffcd11;
+      border: none;
+      outline: none;
+      padding: 1rem 2rem;
+      margin: 1rem 0;
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border-radius: 0.5rem;
+  }
+  #start span {
+      color: #000;
+  }
+  #invalid{
+      color: rgb(219, 16, 16);
+      text-align: center;
+      font-weight: bold;
+  }
+  span{
+      word-wrap: break-word;
+  }
+  header{
+    background-color: #f5ba13;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1{
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;   
+    /* align-items: center; */
+}

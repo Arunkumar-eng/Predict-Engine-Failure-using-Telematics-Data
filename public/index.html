@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Failure Prediction</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!--font-awesome-->
+    <script src="https://kit.fontawesome.com/6b08127ac9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <main>
+        <div class="m-3">
+            <header>
+                <div class="summa">
+                    <h1 style="text-align:center ;" >AV Product Maintenance</h1>
+                    
+                </div>
+            </header>
+        <div id="cntxt">Predict Failure  before it occurs by our smart AI solution</div>
+        </div>    
+        <div id="getdata">
+        <div><h2>Enter your Machine ID to get Started!</h2></div>
+        <div id="input-box">
+            <span class="prefix"> ID :</span>
+            <input id="machineid" type="text" placeholder="Enter Machine ID"/>
+          </div>
+          <div id="invalid"></div>
+          <div>
+              <button id="start" onclick="getlife()"><span>Predict</span></button>
+          </div>
+        </div>
+        <div id="output" class="row flex-lg-row-reverse align-items-center my-3  justify-content-center g-5 py-5" >
+            <div class="col-lg-6">
+                <div><span class="tit">ID: </span> 
+                    <span  class="val" id="put_id">ABCDE00212</span>
+                </div>
+                <br>
+                <div><span class="tit">Remainig Useful Time : </span>
+                    <span  class="val" id="put_value">117.56 min(s)</span>
+                </div>
+                <br>
+                <div><span class="tit">Need Attention For : </span>
+                    <span  class="val" id="put_cause">Component1_SensorJ_exceededLimit</span> 
+                </div>
+            </div>
+          </div>
+    </main>
+    <div style="text-align: center;">
+        <h3>Developed by : 
+            <a href="https://github.com/Arunkumar-eng" target="_blank">
+                <i class="fa fa-github" aria-hidden="true">Arunkumar and Vignesh</i>
+            </a>
+        </h3>
+    </div>
+</body>
+</html>
